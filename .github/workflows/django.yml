@@ -2,7 +2,7 @@ name: Python application
 
 on:
    push:
-	branches: [egc_test]
+	branch: [egc_test]
   
 
 jobs:

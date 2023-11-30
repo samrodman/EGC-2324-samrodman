@@ -12,7 +12,7 @@ jobs:
 
     services:
       postgres:
-        image: postgres:14.9
+        image: postgres:['14.9', '15']
         env:
           POSTGRES_USER: decide
           POSTGRES_PASSWORD: decide
@@ -43,5 +43,6 @@ jobs:
       run: |
         cd decide
         --branch --source=. ./manage.py test  --keepdb 
+
        
 
